@@ -26,6 +26,11 @@ def division(a, b):
     return round(c, 9)
 
 
+def square(a):
+    a = float(a)
+    return (a**2)
+
+
 class Calculator:
     result = 0
 
@@ -46,4 +51,8 @@ class Calculator:
 
     def divide(self, a, b):
         self.result = division(a, b)
+        return self.result
+
+    def sqr(self, a):
+        self.result = square(a)
         return self.result
