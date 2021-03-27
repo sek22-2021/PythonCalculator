@@ -31,6 +31,11 @@ def square(a):
     return (a**2)
 
 
+def square_root(a):
+    a = float(a)
+    return round(a**(0.5), 4)
+
+
 class Calculator:
     result = 0
 
@@ -55,4 +60,8 @@ class Calculator:
 
     def sqr(self, a):
         self.result = square(a)
+        return self.result
+
+    def sqrt(self, a):
+        self.result = square_root(a)
         return self.result
